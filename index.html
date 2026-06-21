@@ -3,86 +3,260 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TechZen | Achadinhos Inteligentes</title>
-<link rel="stylesheet" href="style.css">
-</head>
 
+<title>TechZen | Achadinhos Inteligentes</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Georgia,serif;
+}
+
+body{
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1448375240586-882707db888b");
+
+background-size:cover;
+background-attachment:fixed;
+color:white;
+
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:25px;
+}
+
+.card{
+
+background:rgba(15,35,20,.55);
+backdrop-filter:blur(8px);
+
+border:2px solid rgba(176,140,70,.25);
+
+border-radius:30px;
+
+padding:30px;
+
+margin-bottom:30px;
+
+box-shadow:
+0 0 30px rgba(0,0,0,.5);
+
+}
+
+.logo{
+
+text-align:center;
+
+}
+
+.logo img{
+
+width:150px;
+border-radius:50%;
+
+border:3px solid rgba(190,170,110,.5);
+
+}
+
+h1{
+
+font-size:65px;
+margin-top:15px;
+
+}
+
+h2{
+
+color:#d9c483;
+
+margin-bottom:15px;
+
+}
+
+p{
+
+font-size:20px;
+line-height:1.7;
+
+}
+
+.botao{
+
+display:inline-block;
+
+margin-top:25px;
+
+background:#17361d;
+
+padding:18px 40px;
+
+border-radius:18px;
+
+border:2px dashed rgba(190,170,110,.35);
+
+text-decoration:none;
+
+color:white;
+
+font-size:22px;
+
+transition:.4s;
+
+}
+
+.botao:hover{
+
+transform:scale(1.04);
+
+}
+
+.categorias{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.item{
+
+background:rgba(0,0,0,.25);
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+border:2px dashed rgba(176,140,70,.25);
+
+font-size:22px;
+
+}
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+opacity:.8;
+
+}
+
+</style>
+</head>
 <body>
 
-<div class="background"></div>
+<div class="container">
 
-<header class="hero">
-    <img src="logo.png" class="logo">
-    <h1>TechZen</h1>
-    <h2>Achadinhos Inteligentes</h2>
+<div class="card logo">
 
-    <p>
-        Curadoria pronta para você.<br>
-        Compras inteligentes, vida mais leve 🌿
-    </p>
-</header>
+<img src="SUA_LOGO_AQUI">
 
-<section class="card destaque">
+<h1>TechZen</h1>
 
-<h3>🍃 ACHADINHO DA SEMANA</h3>
-
-<h1>Difusor Inteligente Zen</h1>
+<h2>Achadinhos Inteligentes</h2>
 
 <p>
-Crie o ambiente perfeito para relaxar. Controle a luz e o aroma pelo celular.
+Curadoria pronta para você.<br>
+Compras inteligentes, vida mais leve 🌿
 </p>
-
-<a href="#">
-<button>Ver Achado →</button>
-</a>
-
-</section>
-
-<section class="categorias">
-
-<h1>Explore por Categoria</h1>
-
-<div class="grid">
-
-<div class="categoria">🏡 Casa e Decoração</div>
-
-<div class="categoria">🌿 Bem-estar</div>
-
-<div class="categoria">🔍 Organização</div>
-
-<div class="categoria">🎁 Presentes</div>
-
-<div class="categoria">⚡ Ofertas Especiais</div>
 
 </div>
 
-</section>
+<div class="card">
 
-<section class="instagram">
+<h2>🍃 ACHADINHO DA SEMANA</h2>
+
+<h1>Difusor Inteligente Zen</h1>
+
+<br>
+
+<p>
+Crie o ambiente perfeito para relaxar.
+Controle a luz e o aroma pelo celular.
+Tecnologia a favor do bem-estar.
+</p>
+
+<a class="botao" href="#">
+Ver Achado →
+</a>
+
+</div>
+
+<div class="card">
+
+<h1>Explore por Categoria</h1>
+
+<br>
+
+<div class="categorias">
+
+<div class="item">
+🏠<br><br>
+Casa e Decoração
+</div>
+
+<div class="item">
+🌿<br><br>
+Bem-estar
+</div>
+
+<div class="item">
+🔎<br><br>
+Organização
+</div>
+
+<div class="item">
+🎁<br><br>
+Presentes
+</div>
+
+<div class="item">
+⚡<br><br>
+Ofertas Especiais
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
 
 <h1>Quer ficar por dentro?</h1>
 
+<br>
+
 <p>
-Siga nosso perfil e ative as notificações.
+Siga nosso Instagram e ative as notificações para não perder nenhum achado.
 </p>
 
-<a href="https://instagram.com/techzen.br">
-
-<button>
-Seguir @techzen.br →
-</button>
-
+<a class="botao" href="#">
+@techzen.br →
 </a>
 
-</section>
+</div>
 
 <footer>
 
-Curadoria com alma. Compras com propósito.
+Curadoria com alma. Compras com propósito.<br><br>
+
+© 2026 TechZen
 
 </footer>
 
-<script src="script.js"></script>
+</div>
 
 </body>
 </html>
