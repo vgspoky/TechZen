@@ -1,262 +1,189 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TechZen | Achadinhos Inteligentes</title>
+<title>TechZen | Achados Inteligentes</title>
 
-<style>
+<meta name="theme-color" content="#15251a">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Georgia,serif;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-body{
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
 
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1448375240586-882707db888b");
+<link rel="stylesheet" href="style.css">
 
-background-size:cover;
-background-attachment:fixed;
-color:white;
-
-}
-
-.container{
-max-width:900px;
-margin:auto;
-padding:25px;
-}
-
-.card{
-
-background:rgba(15,35,20,.55);
-backdrop-filter:blur(8px);
-
-border:2px solid rgba(176,140,70,.25);
-
-border-radius:30px;
-
-padding:30px;
-
-margin-bottom:30px;
-
-box-shadow:
-0 0 30px rgba(0,0,0,.5);
-
-}
-
-.logo{
-
-text-align:center;
-
-}
-
-.logo img{
-
-width:150px;
-border-radius:50%;
-
-border:3px solid rgba(190,170,110,.5);
-
-}
-
-h1{
-
-font-size:65px;
-margin-top:15px;
-
-}
-
-h2{
-
-color:#d9c483;
-
-margin-bottom:15px;
-
-}
-
-p{
-
-font-size:20px;
-line-height:1.7;
-
-}
-
-.botao{
-
-display:inline-block;
-
-margin-top:25px;
-
-background:#17361d;
-
-padding:18px 40px;
-
-border-radius:18px;
-
-border:2px dashed rgba(190,170,110,.35);
-
-text-decoration:none;
-
-color:white;
-
-font-size:22px;
-
-transition:.4s;
-
-}
-
-.botao:hover{
-
-transform:scale(1.04);
-
-}
-
-.categorias{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:20px;
-
-}
-
-.item{
-
-background:rgba(0,0,0,.25);
-
-padding:35px;
-
-border-radius:20px;
-
-text-align:center;
-
-border:2px dashed rgba(176,140,70,.25);
-
-font-size:22px;
-
-}
-
-footer{
-
-text-align:center;
-
-padding:40px;
-
-opacity:.8;
-
-}
-
-</style>
 </head>
+
 <body>
 
-<div class="container">
+<div class="glow"></div>
 
-<div class="card logo">
+<div class="folhas">
 
-<img src="SUA_LOGO_AQUI">
+<div class="folha folha1"></div>
+<div class="folha folha2"></div>
+<div class="folha folha3"></div>
+
+</div>
+
+<header class="hero">
+
+<div class="hero-card">
+
+<img src="logo.png" class="logo">
 
 <h1>TechZen</h1>
 
-<h2>Achadinhos Inteligentes</h2>
+<p class="subtitulo">
 
-<p>
-Curadoria pronta para você.<br>
-Compras inteligentes, vida mais leve 🌿
+Achados Inteligentes
+
 </p>
 
-</div>
+<p class="descricao">
 
-<div class="card">
+Compras inteligentes.
+Vida mais leve 🌿
 
-<h2>🍃 ACHADINHO DA SEMANA</h2>
-
-<h1>Difusor Inteligente Zen</h1>
-
-<br>
-
-<p>
-Crie o ambiente perfeito para relaxar.
-Controle a luz e o aroma pelo celular.
-Tecnologia a favor do bem-estar.
 </p>
 
-<a class="botao" href="#">
-Ver Achado →
+<a href="#achado" class="botao">
+
+Ver Achadinho da Semana
+
 </a>
 
 </div>
 
-<div class="card">
+</header>
 
-<h1>Explore por Categoria</h1>
 
-<br>
 
-<div class="categorias">
+<section id="achado" class="card revelar">
 
-<div class="item">
-🏠<br><br>
+<h2>
+
+Achadinho da Semana
+
+</h2>
+
+<p>
+
+Tecnologia e natureza caminhando juntas.
+
+</p>
+
+<a class="botao" href="#">
+
+Ver produto →
+
+</a>
+
+</section>
+
+
+
+<section class="categorias">
+
+<div class="categoria revelar">
+
+🏠
+
+<h3>
+
 Casa e Decoração
+
+</h3>
+
 </div>
 
-<div class="item">
-🌿<br><br>
+
+<div class="categoria revelar">
+
+🌿
+
+<h3>
+
 Bem-estar
+
+</h3>
+
 </div>
 
-<div class="item">
-🔎<br><br>
-Organização
-</div>
 
-<div class="item">
-🎁<br><br>
+<div class="categoria revelar">
+
+🎁
+
+<h3>
+
 Presentes
-</div>
 
-<div class="item">
-⚡<br><br>
-Ofertas Especiais
-</div>
+</h3>
 
 </div>
 
+
+<div class="categoria revelar">
+
+✨
+
+<h3>
+
+Organização
+
+</h3>
+
 </div>
 
-<div class="card">
+</section>
 
-<h1>Quer ficar por dentro?</h1>
 
-<br>
 
-<p>
-Siga nosso Instagram e ative as notificações para não perder nenhum achado.
-</p>
+<section class="social revelar">
 
-<a class="botao" href="#">
-@techzen.br →
+<a class="botao" href="https://instagram.com/techzen.br">
+
+Instagram
+
 </a>
 
-</div>
+
+<a class="botao" href="#">
+
+WhatsApp
+
+</a>
+
+</section>
+
+
 
 <footer>
 
-Curadoria com alma. Compras com propósito.<br><br>
+<div class="linha"></div>
 
-© 2026 TechZen
+<p>
+
+🌿 Curadoria com alma.
+
+Compras com propósito.
+
+</p>
+
+<br>
+
+TechZen © 2026
 
 </footer>
 
-</div>
+<script src="script.js"></script>
 
 </body>
+
 </html>
